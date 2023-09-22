@@ -6,7 +6,7 @@ This repository contains various projects built using Django, a popular Python w
 
 ## Projects
 
-### 1. [Django Blog App](https://github.com/Paul-Ndirangu/django-projects/blog_app)
+### 1. [Django Blog App](https://github.com/Paul-Ndirangu/django-projects/tree/main/blog_app)
 
 The Blog App is a Django-based web application that allows users to create, view, edit, and delete blog posts. It provides a user-friendly interface for managing blog content effectively. Users can register, log in, and access various features like creating new posts, viewing existing posts, and commenting on them.
 
