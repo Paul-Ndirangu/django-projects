@@ -1,5 +1,3 @@
-# django-projects
-
 # Django Projects Repository
 
 This repository contains various projects built using Django, a popular Python web framework. Each project showcases different functionalities and features of Django and can be used as a starting point for your own web development projects.
