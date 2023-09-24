@@ -25,8 +25,9 @@ The Blog App is a Django-based web application that allows users to create, view
 3. Run migrations: `python manage.py migrate`
 4. Run the development server: `python manage.py runserver`
 
-### 2. App 2
+### 2. Portfolio Website
 
+This is my personal portfolio website. It includes the latest projects I have done and my updated resume.
 
 ## License
 
