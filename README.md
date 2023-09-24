@@ -32,6 +32,10 @@ This is my personal portfolio website. It includes the latest projects I have do
 #### Features
 
 
+#### Installation
+
+
+
 ## License
 
 This repository is licensed under the [MIT License](LICENSE).
