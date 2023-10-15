@@ -2,6 +2,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 
 # creating model manager
@@ -36,3 +37,6 @@ class Post(models.Model):
     objects = models.Manager() # The default manager.
     published = PublishedManager() # Our custom manager.
 
+    def get_absolute_url(self):
+        return reverse('blog:post_detail',args=[self.slug])
+    
