@@ -18,12 +18,6 @@ The Blog App is a Django-based web application that allows users to create, view
 - Responsive design: The application is designed to be accessible and usable across various devices.
 ...
 
-#### Installation
-
-1. Clone the repository: `git clone https://github.com/your-username/project-name-1.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run migrations: `python manage.py migrate`
-4. Run the development server: `python manage.py runserver`
 
 ### 2. [Portfolio Website]()
 
@@ -32,9 +26,20 @@ This is my personal portfolio website. It includes the latest projects I have do
 #### Features
 
 
-#### Installation
+### 3. [Verse Blog APP](https://github.com/Paul-Ndirangu/django-projects/tree/main/verse)
 
+Verse is a Django blog app that allows users to create and publish blog posts, as well as leave comments on other users' posts. The app also includes features such as user registration and login, post categories and tags, and a search function.
 
+### Features
+
+Verse includes the following features:
+
+* User registration and login
+* Post categories and tags
+* Search function
+* Markdown support for post content
+* Commenting system ***(To be added in the future)***
+* Admin interface for managing users, posts, and comments
 
 ## License
 
