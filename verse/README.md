@@ -1,10 +1,10 @@
-**README.md for Verse Django Blog App**
+# **Verse Django Blog App**
 
-**Overview**
+### **Overview**
 
 Verse is a Django blog app that allows users to create and publish blog posts, as well as leave comments on other users' posts. The app also includes features such as user registration and login, post categories and tags, and a search function.
 
-**Installation**
+### **Installation**
 
 To install Verse, follow these steps:
 
@@ -26,8 +26,6 @@ To install Verse, follow these steps:
     pip install -r requirements.txt
     ```
 
-
-
 4. Activate the virtual environment:
 
     ```
@@ -46,7 +44,7 @@ To install Verse, follow these steps:
     python manage.py createsuperuser
     ```
 
-**Making migrations**
+### **Making migrations**
 
 To make migrations, simply run the following command:
 
@@ -56,7 +54,7 @@ python manage.py makemigrations
 
 This will create a new migration file for any changes you have made to your models.
 
-**Running the app locally**
+### **Running the app locally**
 
 To start the app locally, run the following command:
 
@@ -66,11 +64,11 @@ python manage.py runserver
 
 This will start a development server on port 8000. You can then access the app in your web browser at http://localhost:8000.
 
-**Usage**
+### **Usage**
 
 Once you have installed and started the app, you can start creating blog posts by logging in and clicking on the "Create new post" button. You can also leave comments on other users' posts by clicking on the "Comment" button below the post.
 
-**Features**
+### **Features**
 
 Verse includes the following features:
 
@@ -81,14 +79,14 @@ Verse includes the following features:
 * Commenting system
 * Admin interface for managing users, posts, and comments
 
-**Deployment**
+### **Deployment**
 
 To deploy Verse to a production environment, you can use a variety of different methods. One popular option is to use a cloud hosting provider such as Heroku or AWS. You can also deploy the app to your own server.
 
-**Contributing**
+### **Contributing**
 
 If you would like to contribute to the development of Verse, please feel free to fork the repository and submit pull requests.
 
-**License**
+### **License**
 
 Verse is licensed under the MIT License.
