@@ -4,7 +4,7 @@ from todo.models import Task
 
 # Views.
 
-def index(request: HttpRequest) -> HttpResponse:
+def index(request):
     tasks = Task.objects.all().order_by("-created")
 
     context = {"tasks": tasks}
