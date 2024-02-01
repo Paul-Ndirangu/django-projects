@@ -1,0 +1,15 @@
+<!-- todo/templates/partials/todo_row.html -->
+
+<tr id="task-row-{{task.id}}">
+
+    {% if task.status == Status.DONE %}
+    <td>
+        <del>{{task.name}}</del>
+    </td>
+    {% else %}
+    <td>{{task.name}}</td>
+    {% endif %}
+
+    <td>
+        {% if task.status == Status.TODO %}
+        <div class="btn btn-danger border"
