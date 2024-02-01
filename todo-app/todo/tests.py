@@ -7,6 +7,8 @@ from django.http import HttpResponse
 from django.urls import reverse
 from django.test import TestCase, Client
 
+ 
+from todo.forms import TaskForm
 from todo.models import Task
 
 # App tests.
@@ -78,4 +80,21 @@ class TestIndexView(TestCase):
         response = self.client.get(self.url)    
         self.assertTemplateUsed(response, "temp_index.html")
         
+# todo/forms.py 
+class TestTaskForm(TestCase):
+    def test_form_instance(self):
+        """Test that form has name field"""
+        form = TaskForm()
+ 
+        self.assertIn("name", form.fields)
+ 
+    def test_is_valid(self):
+        form = TaskForm(data={"name": "Book dentist appointment"})
+ 
+        self.assertTrue(form.is_valid())
+ 
+    def test_empty_form_invalid(self):
+        form = TaskForm(data={"name": None})
+ 
+        self.assertFalse(form.is_valid())
         
