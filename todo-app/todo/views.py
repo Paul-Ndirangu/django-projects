@@ -1,15 +1,16 @@
+# todo/views.py
+ 
+from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
-from django.http import HttpResponse, HttpRequest
+ 
 from todo.forms import TaskForm
 from todo.models import Task
-
-# Views.
-
-def index(request):
+ 
+ 
+def index(request: HttpRequest) -> HttpResponse:
     form = TaskForm()
     tasks = Task.objects.all().order_by("-created")
-
-    context = {"tasks": tasks}
-    
+ 
+    context = {"tasks": tasks, "form": form}
+ 
     return render(request, "temp_index.html", context)
-    
