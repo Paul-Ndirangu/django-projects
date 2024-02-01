@@ -19,4 +19,4 @@ def index(request: HttpRequest) -> HttpResponse:
  
     context = {"tasks": tasks, "form": form}
  
-    return render(request, "temp_index.html", context)
+    return render(request, "index.html", context)
