@@ -78,3 +78,4 @@ class TestIndexView(TestCase):
         response = self.client.get(self.url)    
         self.assertTemplateUsed(response, "temp_index.html")
         
+        
