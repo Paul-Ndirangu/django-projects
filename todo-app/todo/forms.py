@@ -7,7 +7,7 @@ class TaskForm(forms.ModelForm):
     class Meta:
         model = Task
         fields = ["name"]
-        
+ 
     name = forms.CharField(
         label=False,
         widget=forms.TextInput(
@@ -16,5 +16,5 @@ class TaskForm(forms.ModelForm):
                 "placeholder": "What do you need to do?",
                 "class": "form-control form-control-lg inline-block",
             }
-        )
+        ),
     )
