@@ -1,0 +1,16 @@
+// vercel-django-example/vercel.json
+// https://github.com/paul-ndirangu/django-projects/todo-app/vercel.json#L1
+
+{
+    "builds": [{
+        "src": "vercel_app/wsgi.py",
+        "use": "@ardnt/vercel-python-wsgi",
+        "config": { "maxLambdaSize": "15mb" }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "vercel_app/wsgi.py"
+        }
+    ]
+}
