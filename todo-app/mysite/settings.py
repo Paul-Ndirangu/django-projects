@@ -30,8 +30,11 @@ SECRET_KEY = 'django-insecure-d1r@9o2^j=bu(yq-7s)dol94hv1f5=9f7ug$uk@u*)y1-yi^lo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app'] # Allow *.vercel.app
 
+# ...
+
+DATABASES = {} # Prevent Django from loading an adapter
 
 # Application definition
 
