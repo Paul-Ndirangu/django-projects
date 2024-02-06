@@ -50,3 +50,27 @@ def delete_task(request: HttpRequest, task_id: int) -> HttpResponse:
     success_url = reverse("index")
     
     return HttpResponseRedirect(success_url)
+
+
+def filter_tasks(request: HttpRequest, status: str) -> HttpResponse:
+    
+    if not status in Task.StatusChoice.values:
+        return HttpResponseBadRequest("Invalid status")
+    
+    if request.method == "POST":
+        form = TaskForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            
+        tasks = Task.objects.filter(status=status).order_by("-created")
+        
+        form = TaskForm()
+        
+        context = {
+            "tasks": tasks,
+            "form": form,
+            "Status": Task.StatusChoice,
+            "filter_choice": status,
+        }
+        
+        return render(request, "index.html", context)

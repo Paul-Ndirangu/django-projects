@@ -11,4 +11,5 @@ urlpatterns = [
         name = "update_status",
     ),
     path("delete/<int:task_id>", views.delete_task, name="delete"),
+    path("filter/<str:status>", views.filter_tasks, name="filter"),
 ]
