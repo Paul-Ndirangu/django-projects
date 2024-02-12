@@ -31,6 +31,13 @@ This is my personal portfolio website. It includes the latest projects I have do
 
 Verse is a Django blog app that allows users to create and publish blog posts, as well as leave comments on other users' posts. The app also includes features such as user registration and login, post categories and tags, and a search function.
 
+
+### 4. [Weather APP](https://github.com/Paul-Ndirangu/django-projects/tree/main/weather-app)
+...
+
+Weather App is a Django app that allows users to search for weather of any city on earth.
+
+
 ### Features
 
 Verse includes the following features:
