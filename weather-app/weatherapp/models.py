@@ -7,5 +7,5 @@ class City(models.Model):
         return self.name
     
     class Meta: #show the plural of city as cities instead of citys
-        verbose_name_plural = _('cities')
+        verbose_name_plural = ('cities')
         
