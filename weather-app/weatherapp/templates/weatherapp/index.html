@@ -55,13 +55,16 @@
                                 <div class="content">
                                     <p>
                                         <span class="title">{{ weather.city }}</span>
+                                        <br> Country: {{ weather.country }}
                                         <br>
                                         <span class="subtitle">{{ weather.temperature }}° F / {{ weather.temp }}° C </span>
                                         <br> {{ weather.description }}
                                         <br> Pressure: {{ weather.pressure }}
                                         <br> Humidity: {{ weather.humidity }}
-                                        <br>
-
+                                        <br> Wind Speed: {{ weather.wind }}
+                                        <br> Sunrise: {{ weather.sunrise }}
+                                        <br> Sunset: {{ weather.sunset }}
+                                        <br> Max Temp: {{ weather.temp_max }} - Min Temp: {{ weather.temp_min }}
                                     </p>
                                 </div>
                             </div>
