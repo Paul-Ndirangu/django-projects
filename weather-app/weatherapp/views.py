@@ -3,11 +3,12 @@ import requests
 import json
 from . models import City
 from . forms import CityForm
+from config import weather_api
 
 # Create your views here.
 def index(request):
     cities = City.objects.all()
-    url = "http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=6da8a860863f6aff086783e3a36b3c08"
+    url = weather_api
     
     
     if request.method == 'POST':
