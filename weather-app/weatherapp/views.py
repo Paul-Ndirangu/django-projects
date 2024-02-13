@@ -3,12 +3,12 @@ import requests
 import json
 from . models import City
 from . forms import CityForm
-from config import weather_api
+from . import config
 
 # Create your views here.
 def index(request):
     cities = City.objects.all()
-    url = weather_api
+    url = config.weather_api
     
     
     if request.method == 'POST':
