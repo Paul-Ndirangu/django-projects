@@ -23,7 +23,7 @@ def index(request):
     
         weather = {
             'city':city,
-            'temperature':city_weather['main']['temp'],
+            'temperature':round(city_weather['main']['temp'], 1),
             'temp':round((city_weather['main']['temp'])-32, 1),
             'temp_min':city_weather['main']['temp_min'],
             'temp_max':city_weather['main']['temp_max'],
