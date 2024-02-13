@@ -24,6 +24,12 @@ def index(request):
         weather = {
             'city':city,
             'temperature':city_weather['main']['temp'],
+            'temp_min':city_weather['main']['temp_min'],
+            'temp_max':city_weather['main']['temp_max'],
+            'wind':city_weather['wind']['speed'],
+            'country':city_weather['sys']['country'],
+            'sunrise':city_weather['sys']['sunrise'],
+            'sunset':city_weather['sys']['sunset'],
             'description':city_weather['weather'][0]['description'],
             'icon':city_weather['weather'][0]['icon'],
             'pressure':city_weather['main']['pressure'],
