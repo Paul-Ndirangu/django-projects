@@ -13,5 +13,8 @@ def getFood(request):
 
 @api_view(['POST'])
 def postFood(request):
-    return Response()
+    serializer = FoodSerializer(data = request.data)
+    if serializer.is_valid():
+        serializer.save()
+    return Response(serializer.data)
 
